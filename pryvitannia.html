@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dmytriv</title>
+    <style>
+        body{
+            background-color: rgba(250, 228, 195, 0.836);
+        }
+        h1{
+            text-align: center;
+            color: rgb(209, 83, 83);
+            animation: colour 3s infinite;
+        }
+        @keyframes colour {
+            0% { opacity: 1;}
+            50% { opacity: 0;}
+            100% { opacity: 1;}
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+        }
+        .one{
+            width: 250px;
+            height: 200px;
+            float: left;
+            position: absolute;
+            left: -200px;
+            animation: flone 5s 2 alternate;
+        }
+        @keyframes flone {
+            0%{transform: translateX(0px) rotate(0deg);}
+            100%{transform: translateX(400px) rotate(360deg);}
+        }
+        .two{
+            width: 100px;
+            height: 200px;
+            position: absolute;
+            right: -100px;
+            animation: fltwo 5s 2 alternate;
+        }
+        @keyframes fltwo {
+            0%{transform: translateX(0px) rotate(0deg);}
+            100%{transform: translateX(-400px) rotate(360deg);} 
+        }
+    </style>
+</head>
+<body>
+    <h1>Вітаю з 8 березня!</h1>
+    <div class="main">
+        <video controls width="600" height="375">
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.webm" type="video/webm">
+            <source src="video.ogv" type="video/ogg">
+            <track kind="subtitles" src="titles.vtt" srclang="uk">
+        </video>
+    </div>
+    <img class="one" src="https://i.pinimg.com/originals/1d/c0/41/1dc04184d6b18ea4d2f2cabde5ef1e5d.png" alt="">
+    <img class="two" src="https://dbdzm869oupei.cloudfront.net/img/sticker/preview/14320.png" alt="">
+</body>
+</html>
